@@ -1,0 +1,36 @@
+	<!DOCTYPE html>
+	<html lang="en" dir="ltr">
+		<head>
+			<meta charset="utf-8">
+			<title><%= title %></title>
+		</head>
+		<body>
+				<h1><%= header %></h1>
+				<form class="" action="<%= action %>" method="post">
+					<p>
+						<label for="personId">PersonId:</label>
+						<input type="text" name="personId" id="personId" size="5" value="<%= personId.value%>" <%=personId.readonly %> >
+					</p>
+					<p>
+						<label for="firstname">Firstname:</label>
+						<input type="text" name="firstname" id="firstname" size="15" value="<%= firstname.value%>" <%=firstname.readonly %> >
+					</p>
+					<p>
+						<label for="lastname">Lastname:</label>
+						<input type="text" name="lastname" id="lastname" size="15" value="<%= lastname.value%>" <%=lastname.readonly %> >
+					</p>
+					<p>
+						<label for="department">Department:</label>
+						<input type="text" name="department" id="department" size="10" value="<%= department.value%>" <%= department.readonly %> >
+					</p>
+					<p>
+						<label for="salary">Salary:</label>
+						<input type="text" name="salary" id="lastname" size="10" value="<%= salary.value%>" <%=salary.readonly %> >
+					</p>
+					<button type="submit" name="button">Submit</button>
+				</form>
+				<a href="/">
+					<button>Menu</button>
+				</a>
+		</body>
+	</html>
